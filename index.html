@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos</title>
+    <!--CSS pego do site de Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+    <!--Aqui é o cabeçalho-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Adoção</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#">Inicio <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Animais para adoção
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Gatos</a>
+                <a class="dropdown-item" href="#">Cachorros</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Clique aqui para doar</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+      <!--final do cabeçalho-->
+<div class="container">
+      <!--Começo das imagens-->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://marketingpoliticohoje.com.br/wp-content/uploads/2020/06/crowdfunding-vaquinha-doac%CC%A7a%CC%83o-eleitoral-ferramenta.png" alt="Primeiro Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://i.ytimg.com/vi/w9x5mwdO1mY/maxresdefault.jpg" alt="Segundo Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://i.ytimg.com/vi/9aDQrK-szR8/maxresdefault.jpg" alt="Terceiro Slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+      <!--Final das imagens-->
+
+      <!--Introdução-->
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Adote um animal</h1>
+          <p class="lead">Este site foi feito com a intençao da conscientização para adoção de animais!</p>
+        </div>
+      </div>
+      <!--Final da introdução-->
+
+      <!--Textos explicativos-->
+      <div class="card-columns">
+        <div class="card">
+          <img class="card-img-top" src="data:image/jpeg;base64,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" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Por que adotar ?</h5>
+            <p class="card-text">Adotar um animal é valorizar a vida. ... Ao adotar, você ajuda a reduzir o número de cães e gatos abandonados. Geralmente os animais de rua ou de abrigos já passaram por muito sofrimento e tudo o que eles precisam é de um bom lar para serem felizes de verdade.</p>
+          </div>
+        </div>
+        <div class="card p-3">
+          <blockquote class="blockquote mb-0 card-body">
+            <p>A grandeza de uma nação e seu progresso moral podem ser julgados pela forma como seus animais são tratados.</p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Mahatma Gandhi 
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="https://solutudo-cdn.s3-sa-east-1.amazonaws.com/prod/adv_files/5998fa16-be9c-451f-adbc-46e6ac1f11fb/9dca4079-391d-41a0-bdc4-68d8d0d1d5cc.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Animais idosos</h5>
+            <p class="card-text">Cães idosos são ótimos para quem tem uma rotina agitada e trabalha fora o dia todo por exemplo. Eles dormem mais e, por isso, passam o dia todo tranquilos sem latir, chorar ou roer a casa. Roer e morder é uma atividade natural dos cães. É importante que o tutor direcione esses comportamento em ossinhos e brinquedos</p>
+            <p class="card-text"></p>
+          </div>
+        </div>
+        <div class="card bg-primary text-white text-center p-3">
+          <blockquote class="blockquote mb-0">
+            <p>Procure uma abrigo mais proximo e encontre seu verdadeiro amor!!</p>
+          </blockquote>
+        </div>
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Seja um doador</h5>
+            <p class="card-text">O ato de doar bens materiais geralmente é uma tarefa muito difícil. ... Além de liberar espaço nos armários e gavetas e ajudar os outros, doar faz bem para a saúde do doador. Segundo os estudos, realizar doações estimula a região do cérebro que nos dá prazer.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img" src="http://g1.globo.com/Noticias/SaoPaulo/foto/0,,14871763-EX,00.jpg" alt="Imagem do card">
+        </div>
+        <div class="card p-3 text-right">
+          <blockquote class="blockquote mb-0">
+            <p>É mais resistente à FIV. Segundo alguns estudos, as mutações genéticas que fazem o pet ter a pelagem preta garantem ao amigo maior resistência a uma doença chamada FIV (semelhante ao HIV em humanos).</p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Gatinhos pretos merecem amor 
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Seja um voluntario</h5>
+            <p class="card-text">Seja em defesa de uma causa, de uma instituição ou de pessoas em situação de risco, o trabalho voluntário tem um papel ativo na transformação de qualquer sociedade. ... Além de exercer a cidadania, quem decide ser voluntário começa a fazer parte de um novo mundo, vive outras experiências, faz o bem e descobre novas causas.</p>
+          </div>
+        </div>
+      </div>
+      <!--Final dos textos aplicativos-->
+</div>
+
+<!--Texto e video-->
+<div class="container">
+<div class="row mt-5 mb-5">
+    <div class="col-md-6">
+        <h3>Não compre, adote!!!</h3>
+        <h6>Por que adotar um animal é não comprar?
+        </h6>
+        <p>É recuperar uma vida literalmente jogada fora. Ao adotar um animal carente, você ensina ao seu filho, às crianças com quem você convive, verdadeiros valores de responsabilidade, comprometimento e, sobretudo, humanidade. Ao adotar, você ajuda a reduzir o número de cães e gatos abandonados.</p>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hjOY9BVqtlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+</div>
+<br>
+<p>Quer adotar? Responda o formulario abaixo que entraremos em contato!!</p>
+<form>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Endereço de email</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Selecione uma opção</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>1 - Adotar</option>
+        <option>2 - Doar</option>
+        <option>3 - Denúncia</option>
+        <option>4 - Sugestões</option>
+        <option>5 - Outros</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Deixe seu recado</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+  </form>
+  <button type="button" class="btn btn-secondary btn-sm">Enviar</button>
+</div>
+
+<!--Site do Bootstrap-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+</body>
+</html>
